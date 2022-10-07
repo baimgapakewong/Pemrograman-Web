@@ -2,7 +2,7 @@
 session_start();
 // membuat database / isikan dengan nama kamu
 $database = [
-    'username' => 'baim'
+    'username' => 'baim',
     'password' => 'koplak5'
 ];
 
@@ -17,7 +17,7 @@ if(isset($_POST['submit'])){
         // set session username
         $_SESSION['username'] = $username;
         // redirect/mengarahkan menuju halaman admin
-        header("location:admin.php");
+        header("Location:admin.php");
     } else {
         // memunculkan pemberitahuan gagal login dan redirect ke login page
         echo '<script> alert("Username atau password salah!");
